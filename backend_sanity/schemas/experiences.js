@@ -14,5 +14,10 @@ export default{
             type:'array',
             of:[{ type:'workExperience'}]
         },
+        {
+            name: 'sl_no',
+            title: 'sl_no',
+            type: 'number'
+        }
     ]
 }

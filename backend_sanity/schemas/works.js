@@ -45,6 +45,17 @@ export default {
          }
        ]
       },
+
+      {
+        name: 'isactive',
+        title: 'is-active',
+        type: 'boolean',
+      },
+      {
+        name: 'sl_no',
+        title: 'sl_no',
+        type: 'number'
+    }
      
     ],
   };

@@ -4,7 +4,6 @@ import { images } from "../../constants";
 import { AppWrap, MotionWrap } from "../../wrapper";
 import { client } from "../../client";
 import "./Footer.scss";
-import { axios } from "axios";
 import emailjs from "@emailjs/browser";
 
 const Footer = () => {
@@ -66,7 +65,7 @@ const Footer = () => {
 
   return (
     <>
-      <h2 className="head-text">Take a coffe & chat with me</h2>
+      <h2 className="head-text">Take a coffee & chat with me</h2>
       <div className="app__footer-cards">
         <div className="app__footer-card">
           <img src={images.email} alt="email" />
@@ -77,8 +76,8 @@ const Footer = () => {
 
         <div className="app__footer-card">
           <img src={images.mobile} alt="mobile" />
-          <a href="tel: +91 903 866 9628" className="p-text">
-            +91 903 866 9628
+          <a href="tel: +91 903 866 9628" className="p-text"><b>
+            +91 903 866 9628  </b>
           </a>
         </div>
       </div>

@@ -4,8 +4,8 @@
   "version": "1.0.0",
   "description": "",
   "main": "package.json",
-  "author": "DIPA BHOW <dipabhow@gmail.com>",
-  "license": "UNLICENSED",
+  "author": "Goutam Bhowmick",
+  "license": "Goutam",
   "scripts": {
     "start": "sanity start",
     "build": "sanity build"

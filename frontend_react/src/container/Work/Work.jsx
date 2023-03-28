@@ -17,6 +17,7 @@ const Work = () => {
 
     client.fetch(query).then((data) => {
       setWorks(data);
+      console.log(data)
       setFilterWork(data);
     });
   }, []);
@@ -43,7 +44,8 @@ const Work = () => {
         <section />
       </h2>
       <div className="app__work-filter">
-        {["Angular", "Node JS", "React JS", "All"].map(
+        {/* {["Angular", "Node JS", "React JS", "All"].map( */}
+        {["Angular", "React JS", "FullStack", "All"].map(
           (item, index) => (
             <div
               key={index}
@@ -64,7 +66,9 @@ const Work = () => {
         className="app__work-portfolio" bn
       >
         {filterWork.map((work, index) => (
-          <div className="app__work-item app__flex" key={index}>
+          <>
+          { work.isactive && (
+          <div className="app__work-item app__flex" key={work._id}>
             <div className="app__work-img app__flex">
               <img src={urlFor(work.imgUrl)} alt={work.name} />
 
@@ -112,6 +116,8 @@ const Work = () => {
               </div>
             </div>
           </div>
+          )}
+          </>
         ))}
       </motion.div>
     </>
